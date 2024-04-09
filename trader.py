@@ -11,6 +11,7 @@ INF = int(1e9)
 class Trader:
   
   POSITION_LIMIT = {'AMETHYST' : 20, 'STARFRUIT' : 20}
+  
   #code from the tutorial algo
   # def tutorialAlgo():
   #   if len(order_depth.sell_orders) != 0:
@@ -24,6 +25,7 @@ class Trader:
   #     if int(best_bid) > acceptable_price:
   #         print("SELL", str(best_bid_amount) + "x", best_bid)
   #         orders.append(Order(product, best_bid, -best_bid_amount))
+  
   def compute_amethyst(self, order_depth, timestamp, ):
     orders: list[Order] = []
     
@@ -31,12 +33,11 @@ class Trader:
     cpos = self.position['AMETHYST']
     #determine mean and avg variance
     acc_bid_and_ask = 10000
-    variance = #closest integer
     
     #sort all buy orders and sell orders to recognize best ask and best bid
     #calculate midpoint
     
-    #try to buy slightly above 
+
     
     
   def run(self, state: TradingState):
